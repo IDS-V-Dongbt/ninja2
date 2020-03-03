@@ -1,0 +1,115 @@
+body {
+    background-color: #f5f5f5;
+    color: #313131;
+    font-family: 'Avenir+Book', sans-serif  ;
+}
+
+.input-group{
+    margin: 2rem 0;
+    position: relative;
+    width: 100%;
+}
+
+.login-container {
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+    display: table;
+    justify-content: space-between;
+    min-height: calc(100vh - 60px);
+    width: 100%;
+    max-width: 1440px;
+}
+
+.block-image,
+.block-form {
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 860px);
+    vertical-align: middle;
+}
+
+.block-image {
+    text-align: right;
+}
+
+.block-image img {
+    max-width: 80%;
+}
+
+.block-form {
+    width: 860px;
+    padding: 0 12%;
+
+}
+
+.form-heading {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.form-login h2{
+    text-align: center;
+    user-select: none;
+    font-weight: 400;
+    text-shadow: 4px 4px 12px rgba(0, 0,0,.2);
+    border-radius: 1rem;
+    
+    
+}
+.form-login input {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    padding: 6px 4px;
+    width: 100%;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.2);
+    height: 60px;
+}
+.form-login label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    font-weight: 400;
+    font-size: 15px;
+    pointer-events: none;
+    color:gray;
+    transition: 200ms ease;
+    transform: translateY(-50%);
+}
+
+.form-login input:focus,
+.form-login input:valid {
+    border-left: 4px solid #5A6AFF;
+}
+
+.form-login input:focus + label,
+.form-login input:valid + label {
+    top: 2px;
+    left: 10px;
+    font-size: 12px;
+    color: #707070;
+    transform: translateY(0);
+}
+
+.form-login button {
+    background: url("../image/login.png") no-repeat center center transparent;
+    background-position: right 10px center;
+    text-transform: uppercase;
+    height: 40px;
+    border: none;
+    padding-right: 50px;
+    font-weight: bold;
+}
+
+.form-login p {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+
+.form-action {
+    text-align: right;
+}
